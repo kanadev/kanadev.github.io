@@ -1,197 +1,933 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.accordion:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-</style>
-</head>
-<body>
-
-<h2>One Stop Saviour</h2>
-<p>This page has collection of all important links and reference to the content normally most useful or frequently used by Quality team, Developers, Management. </p>
-<button class="accordion">Release process checklist</button>
-<div class="panel">
-  <p>This section has the checklist of all the must items for any release to happen successfully.</p>
-</div>
-<button class="accordion">Microsoft Teams</button>
-<div class="panel">
-  <p>This section gives all the locations of important files uploaded on Teams</p>
-  <table id="t01">
-  <tr>
-    <th>Purpose</th>
-    <th>URL</th> 
-  </tr>
-  <tr>
-    <td>TSAC Release wise breakdown of stories</td>
-    <td><a href ="https://teams.microsoft.com/_#/files/General?threadId=19%3A9bac8b44c2b64f53a94a8460360d4447%40thread.skype&ctx=channel&context=Release%2520Planning&rootfolder=%252Fsites%252FTSVMTSSPIndiaTeam%252FShared%2520Documents%252FGeneral%252FTSAC%252FRelease%2520Planning">TSAC Release Story Breakdown</a></td>
-  </tr>
-  <tr>
-    <td>TSAC release wise Qplan documents</td>
-    <td><a href="https://teams.microsoft.com/_#/files/General?threadId=19%3A9bac8b44c2b64f53a94a8460360d4447%40thread.skype&ctx=channel&context=QCert&rootfolder=%252Fsites%252FTSVMTSSPIndiaTeam%252FShared%2520Documents%252FGeneral%252FTSAC%252FQCert">TSAC Release wise QPlans</a></td>
-  </tr>
-  <tr>
-    <td>TSAC reelase wise Support Enablement Deck</td>
-    <td><a href="https://teams.microsoft.com/_#/files/General?threadId=19%3A9bac8b44c2b64f53a94a8460360d4447%40thread.skype&ctx=channel&context=RTM%2520Activities&rootfolder=%252Fsites%252FTSVMTSSPIndiaTeam%252FShared%2520Documents%252FGeneral%252FTSAC%252FRTM%2520Activities">TSAC release wise Support Enablement</a></td>
-  </tr>
-  <tr>
-    <td>TSAC DevOps strategy and CI/CD process followed</td>
-    <td><a href="https://teams.microsoft.com/l/file/86F48F70-8A53-40DF-A893-C835BCB8B144?tenantId=92b796c5-5839-40a6-8dd9-c1fad320c69b&fileType=pptx&objectUrl=https%3A%2F%2Fbmcsoftware.sharepoint.com%2Fsites%2FTSVMTSSPIndiaTeam%2FShared%20Documents%2FGeneral%2FTSAC%2FTechnical%2FDevOps-TSAC.pptx&baseUrl=https%3A%2F%2Fbmcsoftware.sharepoint.com%2Fsites%2FTSVMTSSPIndiaTeam&serviceName=teams&threadId=19:9bac8b44c2b64f53a94a8460360d4447@thread.skype&groupId=23916b16-ab51-4ab6-9b4b-7de1d28f7ec2">TSAC CI/CD Process</a></td>
-  </tr>
-  <tr>
-    <td>TSAC Architechture</td>
-    <td><a href="https://teams.microsoft.com/l/file/E6064E2C-6FBF-40A8-83AD-3E66A6D9B142?tenantId=92b796c5-5839-40a6-8dd9-c1fad320c69b&fileType=pptx&objectUrl=https%3A%2F%2Fbmcsoftware.sharepoint.com%2Fsites%2FTSVMTSSPIndiaTeam%2FShared%20Documents%2FGeneral%2FTSAC%2FTechnical%2FArchitecture-TSAC.pptx&baseUrl=https%3A%2F%2Fbmcsoftware.sharepoint.com%2Fsites%2FTSVMTSSPIndiaTeam&serviceName=teams&threadId=19:9bac8b44c2b64f53a94a8460360d4447@thread.skype&groupId=23916b16-ab51-4ab6-9b4b-7de1d28f7ec2">TSAC Architechture</a></td>
-  </tr>
-</table>
-</div>
-
-<button class="accordion">JIRA</button>
-<div class="panel">
-  <p>This section lists all important links for JIRA</p>
-  <table id="t01">
-  <tr>
-    <th>Purpose</th>
-    <th>URL</th> 
-  </tr>
-  <tr>
-    <td>Get latest status of Defects</td>
-    <td><a href ="https://jira.bmc.com/secure/Dashboard.jspa?selectPageId=30801">Get latest status of Defects</a></td>
-  </tr>
-  <tr>
-    <td>Renault Scrum Team Tasks</td>
-    <td><a href="https://jira.bmc.com/secure/RapidBoard.jspa?rapidView=1357&quickFilter=8015">Renault Scrum Team Tasks</a></td>
-  </tr>
-  <tr>
-    <td>Redbull Scrum Team Tasks</td>
-    <td><a href="https://jira.bmc.com/secure/RapidBoard.jspa?rapidView=1357&quickFilter=8014">Redbull Scrum Team Tasks</a></td>
-  </tr>
-</table>
-</div>
-
-<button class="accordion">DevOps</button>
-<div class="panel">
-  <p>This section lists all important links for DevOps related process</p>
-  <table id="t01">
-  <tr>
-    <th>Purpose</th>
-    <th>URL</th> 
-  </tr>
-  <tr>
-    <td>Automation dashboard for Helix Sanity suite</td>
-    <td><a href ="http://vl-aus-blg-bl13:9080/view/HELIX%20REMEDIATE%20TRUNK/">Helix Sanity Dashboard</a></td>
-  </tr>
-  <tr>
-    <td>Automation dashboard for Helix Development suite</td>
-    <td><a href ="http://vl-aus-blg-bl13:9080/view/HELIX%20REMEDIATE%20TRUNK%20(INTERNAL)/">Helix Internal Dashboard</a></td>
-  </tr>
-  <tr>
-	<td>Automation dashboard for On-Premise Sanity suite</td>
-    <td><a href ="http://vl-aus-blg-bl13:9080/view/TSSP%20TRUNK/">On-Premise Sanity Dashboard</a></td>
-  </tr>
-  <tr>
-    <td>Automation dashboard for On-Premise Development suite</td>
-    <td><a href ="http://vl-aus-blg-bl13:9080/view/TSSP%20Trunk%20(Internal)/">Helix Internal Dashboard</a></td>
-  </tr>
-  <tr>
-    <td>All Jobs related to Helix Deployment</td>
-    <td><a href ="http://vl-aus-blg-bl13:9080/view/tsac-helix/">Helix Jobs</a></td>
-  </tr>
-</table>
-</div>
-
-<button class="accordion">Confluence Page</button>
-<div class="panel">
-  <p>All important confluence pages are listed in this section</p>
-  <table id="t01">
-  <tr>
-    <th>Purpose</th>
-    <th>URL</th> 
-  </tr>
-  <tr>
-    <td>Infrastructure created for Helix Setups</td>
-    <td><a href ="https://confluence.bmc.com/pages/viewpage.action?spaceKey=BCAS8&title=Helix+infrasturcture">Helix Infrastructure</a></td>
-  </tr>
-  <tr>
-    <td>SDD pages per microservice of TSAC</td>
-    <td><a href ="https://confluence.bmc.com/display/BCAS8/TSAC+Home#TSACHome-SoftwareDesignDocuments(SDD)">TSAC SDDs</a></td>
-  </tr>
-  <tr>
-	<td>Github repositories for all the microservices in TSAC</td>
-    <td><a href ="https://confluence.bmc.com/display/BCAS8/TSAC+Home#TSACHome-SourceCodeorGitRepositories">TSAC Git Repositories</a></td>
-  </tr>
-  <tr>
-    <td>Quality Owners</td>
-    <td><a href ="https://confluence.bmc.com/display/BCAS8/TSAC+Home#TSACHome-QualityOwners">Quality owners</a></td>
-  </tr>
-</table>
-</div>
-
-<button class="accordion">Tools</button>
-<div class="panel">
-  <p>All internal, system and Support enablement sessions can be found in this section.</p>
-  <table id="t01">
-  <tr>
-    <th>Purpose</th>
-    <th>URL</th> 
-  </tr>
-  <tr>
-    <td>Access Production like Helix setup logs - Kibana </td>
-    <td><a href ="http://10.128.99.85:32450/app/kibana#/home?_g=()">Kibana for dsmlab Rancher cluster</a></td>
-  </tr>
-</table>
-</div>
-
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8377502488503239",
+    enable_page_level_ads: true
   });
-}
 </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vikas Kanade">
+  <meta name="keywords" content="">
+  <meta name="author" content="Vikas Kanade">
 
+  <title>Vikas Kanade – Portfolio</title>
+
+  <!-- Web Fonts -->
+  <!--<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'> -->
+  <!-- Bootstrap core CSS -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <!-- Font Awesome CSS -->
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+  <!-- Animate css -->
+  <link href="assets/css/animate.css" rel="stylesheet">
+  <!-- Magnific css -->
+  <link href="assets/css/magnific-popup.css" rel="stylesheet">
+  <!-- Custom styles CSS -->
+  <link href="assets/css/style.css" rel="stylesheet" media="screen">
+  <!-- Responsive CSS -->
+  <link href="assets/css/responsive.css" rel="stylesheet">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="shortcut icon" href="assets/images/ico/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="assets/images/ico/apple-touch-icon-57-precomposed.png">
+
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="tt-preloader">
+    <div id="pre-status">
+      <div class="preload-placeholder"></div>
+    </div>
+  </div>
+
+  <!-- Home Section -->
+  <section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+    <div class="intro">
+      <div class="intro-sub">Vikas Kanade</div>
+
+      <!-- <div class="social-icons">
+        <ul class="list-inline">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+        </ul>
+      </div> -->
+      <!-- /.social-icons -->
+      <div class="social-icons">
+        <ul class="social list-inline">
+          <li><a href="https://twitter.com/ajinkya_babar"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://plus.google.com/u/0/115392246128159663420"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/ajinkya-babar-022b8549/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/ajinkyababar"><i class="fa fa-github-alt"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mouse-icon">
+      <div class="wheel"></div>
+    </div>
+  </section>
+  <!-- End Home Section -->
+
+
+
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar navbar-custom" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="custom-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#works">Projects</a></li>
+            <!--<li><a href="#blog">Awards</a></li>-->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- .container -->
+    </nav>
+  </header>
+  <!-- End Navigation -->
+
+
+  <!-- About Section -->
+  <section id="about" class="about-section section-padding">
+    <div class="container">
+      <h2 class="section-title wow fadeInUp">About Me</h2>
+
+      <div class="row">
+
+        <div class="col-md-4 col-md-push-8">
+          <div class="biography">
+            <div class="myphoto">
+              <img src="assets/images/Vikas.jpg" alt="">
+            </div>
+            <ul>
+              <li><strong>Name:</strong> Vikas Kanade</li>
+              <li><strong>Date of birth:</strong> 03 June 1985</li>
+              <li><strong>Address:</strong> Pune, India</li>
+              <li><strong>Nationality:</strong> Indian</li>
+              <li><strong>Phone:</strong> (+91) 9545887489</li>
+              <li><strong>Email:</strong> vikas.kanade@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <!-- col-md-4 -->
+
+        <div class="col-md-8 col-md-pull-4">
+          <div class="short-info wow fadeInUp">
+            <h3>Objective</h3>
+            <p>To secure a position where I can efficiently contribute my skills and abilities for the growth of the Organization
+              and build my professional career.</p>
+          </div>
+
+          <div class="short-info wow fadeInUp">
+            <h3>What I Do ?</h3>
+            <p> Leading API and UI automation teams <br>  Build robust automation framework <br>  Work as DevOps Engineer - dealing with CI/CD process for QA Automation, SaaS product deployment.<br>  Passionate about Agile process and Software quality. </p>
+
+            <ul class="list-check">
+              <li>Leading API and UI automation teams</li>
+              <li>DevOps Engineer</li>
+              <li>Agile process and Software Quality advocate</li>
+
+            </ul>
+          </div>
+
+          <div class="download-button">
+
+            <a class="btn btn-primary btn-lg" href="https://drive.google.com/open?id=0B52k1zL-fo_3cXdVOG1aVm9tNVU"><i class="fa fa-download"></i>download my cv</a>
+          </div>
+          <br><br>
+          <div class="short-info wow fadeInUp">
+            <h3>Languages</h3>
+            <ul class="list-group">
+              <li class="list-group-item">English <span class="label label-success">Fluent</span> </li>
+              <li class="list-group-item">Marathi <span class="label label-default">Native</span> </li>
+			  <li class="list-group-item">Hindi <span class="label label-success">Fluent</span> </li>
+			  <li class="list-group-item">Kannada <span class="label label-success">Fluent</span> </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- End About Section -->
+
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume-section section-padding">
+    <div class="container">
+      <h2 class="section-title wow fadeInUp">Resume</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="resume-title">
+            <h3>Education</h3>
+          </div>
+          <div class="resume">
+            <ul class="timeline">
+              <li>
+                <div class="posted-date">
+                  <span class="month">January 2006 - January 2010</span>
+                </div>
+                <!-- /posted-date -->
+
+                <div class="timeline-panel wow fadeInUp">
+                  <div class="timeline-content">
+                    <div class="timeline-heading">
+                      <h3>M.S. [Software engineering]</h3>
+                      <span>Birla Institute Of Technology and Science<br>Pilani,Rajasthan,India</span>
+
+                    </div>
+                    <!-- /timeline-heading -->
+
+                    <div class="timeline-body">
+                      <!--        <p>I have completed UI Engineering degree from ABC University, Boston, USA at feel the charm of existence in this spot, which was creat.</p> -->
+                    </div>
+                    <!-- /timeline-body -->
+                  </div>
+                  <!-- /timeline-content -->
+                </div>
+                <!-- /timeline-panel -->
+              </li>
+
+              <li class="timeline-inverted">
+                <div class="posted-date">
+                  <span class="month">2003-2005</span>
+                </div>
+                <!-- /posted-date -->
+
+                <div class="timeline-panel wow fadeInUp">
+                  <div class="timeline-content">
+                    <div class="timeline-heading">
+                      <h3>Bachelor Of Science [B.Sc - Electronics]</h3>
+                      <span>Nowrosjee Wadia College, Pune, Maharashtra</span>
+                    </div>
+                    <!-- /timeline-heading -->
+
+                    <div class="timeline-body">
+                      <p>Percentage: 75.88%</p>
+                    </div>
+                    <!-- /timeline-body -->
+                  </div>
+                  <!-- /timeline-content -->
+                </div>
+                <!-- /timeline-panel -->
+              </li>
+
+              <li>
+                <div class="posted-date">
+                  <span class="month">2000-2002</span>
+                </div>
+                <!-- /posted-date -->
+                <div class="timeline-panel wow fadeInUp">
+                  <div class="timeline-content">
+                    <div class="timeline-heading">
+                      <h3>Higher Secondary School Certificate</h3>
+                      <span>S.V.Union Jr. College, Pune, Maharashtra</span>
+                    </div>
+                    <!-- /timeline-heading -->
+
+                    <div class="timeline-body">
+                      <p>Percentage: 75.77%</p>
+                    </div>
+                    <!-- /timeline-body -->
+                  </div>
+                  <!-- /timeline-content -->
+                </div>
+                <!-- /timeline-panel -->
+              </li>
+			  
+			    <li class="timeline-inverted">
+                <div class="posted-date">
+                  <span class="month">2000</span>
+                </div>
+                <!-- /posted-date -->
+
+                <div class="timeline-panel wow fadeInUp">
+                  <div class="timeline-content">
+                    <div class="timeline-heading">
+                      <h3>Secondary School Certificate</h3>
+                      <span>Lonkar Madhyamik Vidyalaya, Mundhwa, Pune, Maharashtra</span>
+                    </div>
+                    <!-- /timeline-heading -->
+
+                    <div class="timeline-body">
+                      <p>Percentage: 77.47%</p>
+                    </div>
+                    <!-- /timeline-body -->
+                  </div>
+                  <!-- /timeline-content -->
+                </div>
+                <!-- /timeline-panel -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /row -->
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="resume-title">
+            <h3>Experience</h3>
+          </div>
+          <div class="resume">
+            <ul class="timeline">
+              <li class="timeline-inverted">
+                <div class="posted-date">
+                  <span class="month">March 2015-June 2015</span>
+                </div>
+                <!-- /posted-date -->
+
+                <div class="timeline-panel wow fadeInUp">
+                  <div class="timeline-content">
+                    <div class="timeline-heading">
+                      <h3>Software Development Intern</h3>
+                      <span>Innovation Studio</span>
+                    </div>
+                    <!-- /timeline-heading -->
+
+                    <div class="timeline-body">
+                      <p>Worked on Innovation Studio which is the BMC Software product as a part of Development team.</p>
+                    </div>
+                    <!-- /timeline-body -->
+                  </div>
+                  <!-- /timeline-content -->
+                </div>
+                <!-- /timeline-panel -->
+              </li>
+
+              <li>
+                <div class="posted-date">
+                  <span class="month">August 2016- Till Now</span>
+                </div>
+                <!-- /posted-date -->
+
+                <div class="timeline-panel wow fadeInUp">
+                  <div class="timeline-content">
+                    <div class="timeline-heading">
+                      <h3>Intern Graduate</h3>
+                      <span>BMC Software, Pune</span>
+                    </div>
+                    <!-- /timeline-heading -->
+
+                    <div class="timeline-body">
+                      <p>Worked with Research and Development team on BSA product.<br>After that worked on SaaS project(Optimize)
+                        as a part UI Developer.</p>
+                    </div>
+                    <!-- /timeline-body -->
+                  </div>
+                  <!-- /timeline-content -->
+                </div>
+                <!-- /timeline-panel -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- End Resume Section -->
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section section-padding">
+    <div class="container">
+      <h2 class="section-title wow fadeInUp">Skills</h2>
+
+
+
+      <div class="skill-chart text-center">
+        <h3>Computer Languages and DB</h3>
+      </div>
+      <br><br>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="skill-progress">
+            <div class="skill-title">
+              <h3>Test Planning and Estimation</h3>
+            </div>
+            <div class="progress">
+              <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span>Expert</span>
+              </div>
+            </div>
+            <!-- /.progress -->
+          </div>
+          <!-- /.skill-progress -->
+
+          <div class="skill-progress">
+            <div class="skill-title">
+              <h3>Agile process</h3>
+            </div>
+            <div class="progress">
+              <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><span>Expert</span>
+              </div>
+            </div>
+            <!-- /.progress -->
+          </div>
+          <!-- /.skill-progress -->
+          <div class="skill-progress">
+            <div class="skill-title">
+              <h3>DevOps process</h3>
+            </div>
+            <div class="progress">
+              <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>Expert</span>
+              </div>
+            </div>
+            <!-- /.progress -->
+          </div>
+          <!-- /.skill-progress -->
+        </div>
+        <!-- /.col-md-6 -->
+
+        <div class="col-md-6">
+          <div class="skill-progress">
+            <div class="skill-title">
+              <h3>Scripting - Shell,Python</h3>
+            </div>
+            <div class="progress">
+              <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span>Intermediate</span>
+              </div>
+            </div>
+            <!-- /.progress -->
+          </div>
+          <!-- /.skill-progress -->
+          <div class="skill-progress">
+            <div class="skill-title">
+              <h3>Automation Tools</h3>
+            </div>
+            <div class="progress">
+              <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>Expert</span>
+              </div>
+            </div>
+            <!-- /.progress -->
+          </div>
+          <!-- /.skill-progress -->
+          <div class="skill-progress">
+            <div class="skill-title">
+              <h3>NodeJs</h3>
+            </div>
+            <div class="progress">
+              <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>Intermediate</span>
+              </div>
+            </div>
+            <!-- /.progress -->
+          </div>
+          <!-- /.skill-progress -->
+        </div>
+        <!-- /.col-md-6 -->
+      </div>
+      <!-- /.row -->
+
+      <br><br>
+      <div class="skill-chart text-center">
+        <h3>Tools and Libraries</h3>
+      </div>
+
+      <div class="row more-skill text-center">
+        <!-- <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="chart" data-percent="90" data-color="e74c3c">
+            <span class="percent">Expert</span>
+            <div class="chart-text">
+              <span>BladeLogic Server Automation </span>
+            </div>
+          </div>
+        </div> -->
+        <!--<div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="chart" data-percent="95" data-color="e74c3c">
+            <span class="percent">Expert</span>
+            <div class="chart-text">
+              <span>Android SDK, Android Studio </span>
+            </div>
+          </div>
+        </div>-->
+        <!--<div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="chart" data-percent="70" data-color="2ecc71">
+            <span class="percent"></span>
+            <div class="chart-text">
+              <span>BladeLogic Server Automation</span>
+            </div>
+          </div>
+        </div>-->
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="chart" data-percent="70" data-color="3498db">
+            <span class="percent"></span>
+            <div class="chart-text">
+              <span>JIRA </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="chart" data-percent="70" data-color="3498db">
+            <span class="percent"></span>
+            <div class="chart-text">
+              <span>AppScan, NexusScan  </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="chart" data-percent="70" data-color="3498db">
+            <span class="percent"></span>
+            <div class="chart-text">
+              <span>Perforce, GitHub</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="chart" data-percent="75" data-color="3498db">
+            <span class="percent"></span>
+            <div class="chart-text">
+              <span>Visual Code, Selenium </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="chart" data-percent="90" data-color="3498db">
+            <span class="percent"></span>
+            <div class="chart-text">
+              <span>SoapUI </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="chart" data-percent="70" data-color="3498db">
+            <span class="percent"></span>
+            <div class="chart-text">
+              <span>DevOps </span>
+            </div>
+          </div>
+        </div>
+        <!--<div class="col-xs-12 col-sm-4 col-md-2">
+          <div class="chart" data-percent="70" data-color="3498db">
+            <span class="percent"></span>
+            <div class="chart-text">
+              <span>Blender, Photoshot, AfterEfects</span>
+            </div>
+          </div>
+        </div>-->
+      </div>
+
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- End Skills Section -->
+
+
+
+  <!-- Works Section -->
+  <section id="works" class="works-section section-padding">
+    <div class="container">
+      <h2 class="section-title wow fadeInUp">Projects</h2>
+
+      <ul class="list-inline" id="filter">
+        
+        <!--<li><a data-group="game">Games</a></li>-->
+        <li><a class="active" data-group="android">Android</a></li>
+        <li><a data-group="intern">Intern</a></li>
+        <li><a data-group="other">Other</a></li>
+      </ul>
+
+      <div class="row">
+        <div id="grid">
+
+          <div class="portfolio-item" data-groups='["android"]'>
+            <div class="portfolio-bg">
+              <div class="portfolio">
+                <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                  <div class="timeline-content">
+                    <div class="timeline-heading">
+                    </div>
+                    <!-- /timeline-heading -->
+                    <div class="timeline-body">
+                      <div class="col-md-6">
+                        <h3>Tic Tac Toe </h3>
+                        <br>
+                        <p>Tic Tac Toe is an Android game for two players, X and O, who take turns marking the spaces in a 3×3 grid.
+                           The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</p>
+                      </div>
+                      <!--<div class="col-md-6">
+                        <br><br>
+                        <div class="download-button">
+                          <a class="btn btn-info btn-lg" href="http://akshaykale.github.io/Alert_Ads/"><i class="fa fa-info-circle"></i>More Info...</a>
+                          <a class="btn btn-primary btn-lg" href="https://github.com/akshaykale/Alert_Ads"><i class="fa fa-download"></i>Github</a>
+                        </div>
+                      </div>-->
+                    </div>
+                    <!-- /timeline-body -->
+                  </div>
+                  <!-- /timeline-content -->
+                </div>
+              </div>
+              <!-- /.portfolio -->
+            </div>
+            <!-- /.portfolio-bg -->
+          </div>
+          <!-- /.portfolio-item -->
+
+          <div class="portfolio-item" data-groups='["android"]'>
+            <div class="portfolio-bg">
+              <div class="portfolio">
+                <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                  <div class="timeline-content">
+                    <div class="timeline-heading">
+                    </div>
+                    <!-- /timeline-heading -->
+                    <div class="timeline-body">
+                      <div class="col-md-6">
+                        <h3>Rock paper scissors </h3>
+                        <br>
+                        <p>Rock–paper–scissors or Scissor-Paper-Rock,
+                           is a zero-sum hand game usually played between two people,
+                            in which each player simultaneously forms one of three shapes with an outstretched hand. </p>
+                      </div>
+                      <!--<div class="col-md-6">
+                        <br><br>
+                        <div class="download-button">
+                          <a class="btn btn-primary btn-lg" href="https://github.com/akshaykale/zomImageLoader"><i class="fa fa-download"></i>Github</a>
+                        </div>
+                      </div>-->
+                    </div>
+                    <!-- /timeline-body -->
+                  </div>
+                  <!-- /timeline-content -->
+                </div>
+              </div>
+              <!-- /.portfolio -->
+            </div>
+            <!-- /.portfolio-bg -->
+          </div>
+          <!-- /.portfolio-item -->
+
+          <div class="portfolio-item" data-groups='["intern"]'>
+            <div class="portfolio-bg">
+              <div class="portfolio">
+                <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                  <div class="timeline-content">
+                    <div class="timeline-heading">
+                    </div>
+                    <!-- /timeline-heading -->
+                    <div class="timeline-body">
+                      <div class="col-md-6">
+                        <h3>Personal Time Off </h3>
+                        <br>
+                        <p>Personal Time Off is web based application build in AngularJS.This application is used by an employees to take leaves, 
+                          with great user interface this app is awesome. User can see calendar view, floter, national holidays on this calendar view.
+                        </p>
+                        <span>Software Development Intern, BMC Software, Pune</span>
+                      </div>
+                      <!--<div class="col-md-6">
+                        <br><br>
+                        <div class="download-button">
+                          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#ToolBoxDialog"> More Info...</button>
+                        </div>
+                      </div>-->
+                    </div>
+                    <!-- /timeline-body -->
+                  </div>
+                  <!-- /timeline-content -->
+                </div>
+              </div>
+              <!-- /.portfolio -->
+            </div>
+            <!-- /.portfolio-bg -->
+          </div>
+          <!-- /.portfolio-item -->
+
+          <div class="portfolio-item" data-groups='["other"]'>
+            <div class="portfolio-bg">
+              <div class="portfolio">
+                <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                  <div class="timeline-content">
+                    <div class="timeline-heading">
+                    </div>
+                    <!-- /timeline-heading -->
+                    <div class="timeline-body">
+                      <div class="col-md-6">
+                        <!--<h3>Text To Speech Reader </h3>
+                        <br>
+                        <p> This application is basically used to Read a text files. This app is done in VB.net</p>
+                          <br>Selected for convine 2k14(3rd year project).
+                      </div>-->
+                      <h3>Text To Speech Reader </h3>
+                        <br>
+                        <p>This application is basically used to Read a text files. This app is done in VB.net, with help of this app we can convert our project into an audio(mp3) format. </p>
+                      </div>
+                      <!--<div class="col-md-6">
+                        <br><br>
+                        <div class="download-button">
+                          <a class="btn btn-info btn-lg" href="https://github.com/akshaykale/VisualContentAnalysis"><i class="fa fa-info-circle"></i>More Info...</a>
+                        </div>
+                      </div>-->
+                    </div>
+                    <!-- /timeline-body -->
+                  </div>
+                  <!-- /timeline-content -->
+                </div>
+              </div>
+              <!-- /.portfolio -->
+            </div>
+            <!-- /.portfolio-bg -->
+          </div>
+          <!-- /.portfolio-item -->
+
+          <div class="portfolio-item" data-groups='["other"]'>
+            <div class="portfolio-bg">
+              <div class="portfolio">
+                <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                  <div class="timeline-content">
+                    <div class="timeline-heading">
+                    </div>
+                    <!-- /timeline-heading -->
+                    <div class="timeline-body">
+                      <div class="col-md-6">
+                        <h3>Stack Implementation </h3>
+                        <br>
+                        <p>This project is basically a graphical implemation of stack, project done C/C++ langugae(Graphics.h) with some animation of push and pop operations . </p>
+                      </div>
+                      <!--<div class="col-md-6">
+                        <br><br>
+                        <div class="download-button">
+                          <a class="btn btn-info btn-lg" href="https://github.com/akshaykale/Human-Body-Anatomy-3D"><i class="fa fa-info-circle"></i>More Info...</a>
+                        </div>
+                      </div>-->
+                    </div>
+                    <!-- /timeline-body -->
+                  </div>
+                  <!-- /timeline-content -->
+                </div>
+              </div>
+              <!-- /.portfolio -->
+            </div>
+            <!-- /.portfolio-bg -->
+          </div>
+          <!-- /.portfolio-item -->
+        </div>
+        <!-- /#grid -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- End Works Section -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="ToolBoxDialog" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">ToolBox</h4>
+        </div>
+        <div class="modal-body">
+          <!-- <img src="http://autodesk.i.lithium.com/t5/image/serverpage/image-id/198344i842899F8BF29642E/image-size/original?v=mpbl-1&amp;px=-1" alt="ToolBox Demo gif"> -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="VR-ZombieKiller" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">VR - Zombie Killer</h4>
+        </div>
+        <div class="modal-body">
+          <iframe width="520" height="345" src="http://www.youtube.com/embed/0T0YY61wB8g">
+          </iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="ZombieKiller" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Zombie Killer</h4>
+        </div>
+        <div class="modal-body">
+          <iframe width="520" height="345" src="http://www.youtube.com/embed/1Fuz8nnkdS0">
+          </iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="KinectDemo" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Hand gesture recognition using Kinect V2</h4>
+        </div>
+        <div class="modal-body">
+          <iframe width="520" height="345" src="http://www.youtube.com/embed/Rdj6IGW9P0Y">
+          </iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="SpaceFighter" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Space Fighter</h4>
+        </div>
+        <div class="modal-body">
+          <iframe width="520" height="345" src="http://www.youtube.com/embed/3c1ATgSpNnw">
+          </iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section section-padding">
+    <div class="container">
+      <h2 class="section-title wow fadeInUp">Get in touch</h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="contact-form">
+
+            <div class="row center-xs">
+              <div class="col-sm-6">
+                <i class="fa fa-map-marker"></i>
+                <address>
+                  <strong>Address</strong> Pune, India<br>
+                </address>
+              </div>
+
+              <div class="col-sm-6">
+                <i class="fa fa-mobile"></i>
+                <div class="contact-number">
+                  <strong>Phone Number</strong> (+91) 9545887489<br>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <i class="fa fa-envelope"></i>
+                <div class="contact-number">
+                  <strong>Email ID</strong> vikas.kanade@gmail.com
+                  <br>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- /.contact-form -->
+        </div>
+        <!-- /.col-md-6 -->
+
+        <div class="col-md-6">
+          <div class="row center-xs">
+
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="location-map">
+                <div id="mapCanvas" class="map-canvas"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Scroll-up -->
+  <div class="scroll-up">
+    <a href="#home"><i class="fa fa-angle-up"></i></a>
+  </div>
+
+  <!-- Javascript files -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.stellar.min.js"></script>
+  <script src="assets/js/jquery.sticky.js"></script>
+  <script src="assets/js/smoothscroll.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/jquery.countTo.js"></script>
+  <script src="assets/js/jquery.inview.min.js"></script>
+  <script src="assets/js/jquery.easypiechart.js"></script>
+  <script src="assets/js/jquery.shuffle.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="assets/js/jquery.fitvids.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
+
 </html>
